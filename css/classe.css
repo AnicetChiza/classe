@@ -126,27 +126,11 @@ section {
 }
 
 .allitems {
-  padding: 10px;
+  padding: 20px;
   margin-top: 10px;
   border-radius: 5px;
   background-color: var(--whiteColor);
   box-shadow: 0px 0px 3px 0px var(--gray);
-}
-.allitems .active {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
-  justify-content: flex-end;
-}
-.allitems .active a {
-  color: var(--gray);
-}
-.allitems .active h4 {
-  width: 8px;
-  height: 8px;
-  background-color: var(--green);
-  border-radius: 50%;
 }
 .allitems .ecole {
   display: flex;
