@@ -13,6 +13,7 @@ input{
     width: 100%;
     @include input_properties();
     outline: 1px var(--gray); 
+    font-family: u.$font;
 }
 select{
     width: 100%;
@@ -22,6 +23,8 @@ button{
     width: 100px;
     float: right;
     cursor: pointer;
+    font-family: u.$font;
+    font-weight: bolder;
     @include input_properties();
 }
 label{

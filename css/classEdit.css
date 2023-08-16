@@ -53,6 +53,7 @@ input {
   border: 0.5px solid var(--gray);
   padding: 8px;
   outline: 1px var(--gray);
+  font-family: "Sen", sans-serif;
 }
 
 select {
@@ -67,6 +68,8 @@ button {
   width: 100px;
   float: right;
   cursor: pointer;
+  font-family: "Sen", sans-serif;
+  font-weight: bolder;
   background-color: white;
   border-radius: 5px;
   border: 0.5px solid var(--gray);

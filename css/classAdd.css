@@ -1,12 +1,7 @@
 :root {
-  --skyblue: #bcd9e7;
-  --gray: #c4c4c4;
-  --blending_blue: #0075df;
-  --bluehover: #94bfe9;
   --principalcolor: #f5f5f5;
   --principalcoloropacity:#d4e2efa2;
   --blackColor: #000;
-  --whiteColor: #fff;
 }
 
 body {
@@ -51,6 +46,7 @@ input {
   border-radius: 5px;
   border: 0.5px solid var(--gray);
   padding: 8px;
+  font-family: "Sen", sans-serif;
   outline: 1px var(--gray);
 }
 
@@ -66,6 +62,8 @@ button {
   width: 100px;
   float: right;
   cursor: pointer;
+  font-family: "Sen", sans-serif;
+  font-weight: bolder;
   background-color: white;
   border-radius: 5px;
   border: 0.5px solid var(--gray);
