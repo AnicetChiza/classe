@@ -46,7 +46,7 @@ section {
   background-color: var(--whiteColor);
   box-shadow: 0px 0px 1px 0px var(--gray);
 }
-.left-bloc .items .school {
+.left-bloc .items .classe {
   padding: 10px;
   padding-left: 30px;
   background-color: var(--whiteColor);
@@ -99,7 +99,7 @@ section {
   background-color: var(--principalcolor);
   box-shadow: 0px 0px 1px 0px var(--gray);
 }
-.header .menu .nav-menu .items .school {
+.header .menu .nav-menu .items .classe {
   padding: 10px;
   padding-left: 15px;
   background-color: var(--principalcolor);

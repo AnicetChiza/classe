@@ -1,0 +1,26 @@
+@use '../Utils/'as u;
+
+@include u.breakpoint(laptop){
+    @media screen and (max-width: 900px){
+        .header{
+            .menu{
+                i{
+                    display: initial;   
+                }
+                .nav-menu{
+                    display: initial;
+                }
+                .mobile-menu{
+                    margin-left: 0;
+                }
+            }
+        }
+        section{
+            display: grid;
+            grid-template-columns: auto;
+        }
+        .left-bloc{
+            display: none;
+        }
+    }
+}
