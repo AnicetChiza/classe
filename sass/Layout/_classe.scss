@@ -26,6 +26,7 @@
 }
 @include u.breakpoint(mobile){
     .allitems{
+        padding: 10px;
         .ecole{
             display: flex;
             flex-direction: column;
