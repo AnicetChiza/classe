@@ -108,17 +108,64 @@ section {
 .header .menu .nav-menu .items .logout {
   margin-top: 130px;
 }
-.header .add-school {
+.header .add-class {
   padding: 10px 20px;
   border-radius: 20px;
   background-color: var(--whiteColor);
   box-shadow: 0px 0px 1px 0px var(--gray);
 }
-.header .add-school:hover {
+.header .add-class:hover {
   background-color: var(--blueColor);
 }
-.header .add-school:hover i, .header .add-school:hover a {
+.header .add-class:hover i, .header .add-class:hover a {
   color: var(--whiteColor);
+}
+
+.ecole-enregistree {
+  padding: 20px;
+}
+
+.allitems {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  background-color: var(--whiteColor);
+  box-shadow: 0px 0px 3px 0px var(--gray);
+}
+.allitems .active {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 8px;
+  justify-content: flex-end;
+}
+.allitems .active a {
+  color: var(--gray);
+}
+.allitems .active h4 {
+  width: 8px;
+  height: 8px;
+  background-color: var(--green);
+  border-radius: 50%;
+}
+.allitems .ecole {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.allitems .ecole div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+.allitems .ecole div a {
+  color: var(--blueColor);
+}
+.allitems .ecole div div h2 {
+  height: 15px;
+  border: 1px solid var(--blueColor);
 }
 
 *,
@@ -138,7 +185,7 @@ a {
   font-size: 1.2rem;
 }
 
-.logout, .voir-plus {
+.logout {
   border: 1px solid var(--blackColor);
   border-radius: 20px;
   margin-top: 220px;
@@ -148,26 +195,11 @@ a {
   font-weight: bolder;
   background-color: var(--whiteColor);
 }
-.logout:hover, .voir-plus:hover {
+.logout:hover {
   border: none;
   background-color: var(--blueColor);
 }
-.logout:hover i, .voir-plus:hover i, .logout:hover a, .voir-plus:hover a {
-  color: var(--whiteColor);
-}
-
-.voir-plus {
-  margin-top: 10px;
-  margin-bottom: 10px;
-  border: none;
-  float: right;
-  box-shadow: 0px 0px 1px 0px var(--gray);
-  margin-left: 0;
-}
-.voir-plus:hover {
-  background-color: var(--blueColor);
-}
-.voir-plus:hover i, .voir-plus:hover a {
+.logout:hover i, .logout:hover a {
   color: var(--whiteColor);
 }
 
@@ -176,4 +208,45 @@ img {
   border: 2px solid var(--white);
   width: 25px;
   border: 1px solid var(--blackColor);
+}
+
+@media screen and (max-width: 978px) and (max-width: 900px) {
+  .header .menu i {
+    display: initial;
+  }
+  .header .menu .nav-menu {
+    display: initial;
+  }
+  .header .menu .mobile-menu {
+    margin-left: 0;
+  }
+  section {
+    display: grid;
+    grid-template-columns: auto;
+  }
+  .left-bloc {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  .allitems .ecole {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: start;
+  }
+  .allitems .ecole div {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .header {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  .ecole-enregistree {
+    padding: 10px;
+  }
+  .allitems .items .logout {
+    margin-bottom: 10px;
+  }
 }/*# sourceMappingURL=classe.css.map */

@@ -98,7 +98,7 @@ section{
         }
     }
 
-    .add-school{
+    .add-class{
         padding: 10px 20px;
         border-radius: 20px;
         background-color: var(--whiteColor);
@@ -111,4 +111,45 @@ section{
         }
     }
 
+}
+.ecole-enregistree{
+    padding: 20px;
+}
+.allitems{
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    background-color: var(--whiteColor);
+    box-shadow: 0px 0px 3px 0px var(--gray);
+    .active{
+        @include display_flex;
+        gap: 8px;
+        justify-content: flex-end;
+        a{
+            color: var(--gray);
+        }
+        h4{
+            width: 8px;
+            height: 8px;
+            background-color: var(--green);
+            border-radius: 50%;
+        }
+    }
+    .ecole{
+        @include display_flex;
+        justify-content: space-between;
+        div{
+            @include display_flex;
+            gap: 10px;
+            a{
+                color: var(--blueColor);
+            }
+            div{
+                h2{
+                    height: 15px;
+                    border: 1px solid var(--blueColor);
+                }
+            }
+        }
+    }
 }
